@@ -36,39 +36,39 @@ public class Ticket {
         return fila;
     }
 
-    public int setFila (){
-        return fila;
+    public void setFila (int fila){
+        this.fila = fila;
     }
 
     public int getAsiento(){
         return asiento;
     }
 
-    public int setAsiento(){
-        return asiento;
+    public void setAsiento(int asiento){
+        this.asiento = asiento;
     }
 
     public double getPrecio(){
         return precio;
     }
 
-    public double setPrecio(){
-        return precio;
+    public void setPrecio(int precio){
+        this.precio = precio;
     }
 
     public Date getFechaCompra(){
         return fechaCompra;
     }
 
-    public Date setFechaCompra(){
-        return fechaCompra;
+    public void setFechaCompra(Date fechaCompra){
+       this.fechaCompra = fechaCompra;
     }
 
     public Date getFechaValidez(){
         return fechaValidez;
     }
 
-    public Date setFechaValidez(){
-        return fechaValidez;
+    public void setFechaValidez(Date fechaValidez){
+        this.fechaValidez = fechaValidez;
     }
 }
