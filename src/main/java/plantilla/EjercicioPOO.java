@@ -1,14 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package plantilla;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+
 
 /**
  *
  * @author Marcelo
  */
-public class EjercicioPOO {
+public class EjercicioPoo {
 
     //Plantear un sistema de tickets que obtendrá cada persona al reservar su asiento.
     //Para ello tener emn cuenta lo siguiente:
@@ -16,7 +18,7 @@ public class EjercicioPOO {
     /*1. Crear la "plantilla" necesaria para guardar los siguientes datos por
     ticket; numero, fila, asiento, fecha de compra, fecha de validez, precio
 
-    2. Usar una "base de datos lógica" mefiante alguna estructura de datos
+    2. Usar una "base de datos lógica" mediante alguna estructura de datos
     que permita almacenar un número indeterminado de tickets. Cargar una
     serie de tickets a dicha estructura.
 
@@ -37,8 +39,21 @@ public class EjercicioPOO {
     */
 
     public static void main(String[] args) {
-        
+        List<Ticket> listaTickets = new ArrayList<Ticket>();
+
+        Ticket ticket1 = new Ticket(1, 1, 2, 10000, new Date(), new Date());
+        Ticket ticket2 = new Ticket(1, 1, 1, 10000, new Date(), new Date());
+
+        Ticket ticket3 = new Ticket();
+        ticket3.setNumero(3);
+        ticket3.setFila(3);
+        ticket3.setAsiento(1);
+        ticket3.setPrecio(10000);
+        ticket3.setFechaCompra(new Date());
+        ticket3.setFechaValidez(new Date());
+
+        listaTickets.add(ticket1);
+        listaTickets.add(ticket2);
+        listaTickets.add(ticket3);
     }
 }
-
-

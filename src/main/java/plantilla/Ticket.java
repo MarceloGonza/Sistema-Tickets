@@ -1,4 +1,4 @@
-package plantilla.logica;
+package plantilla;
 
 import java.util.Date;
 
@@ -52,7 +52,7 @@ public class Ticket {
         return precio;
     }
 
-    public void setPrecio(int precio){
+    public void setPrecio(double precio){
         this.precio = precio;
     }
 
@@ -61,7 +61,7 @@ public class Ticket {
     }
 
     public void setFechaCompra(Date fechaCompra){
-       this.fechaCompra = fechaCompra;
+        this.fechaCompra = fechaCompra;
     }
 
     public Date getFechaValidez(){
