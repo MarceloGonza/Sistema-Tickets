@@ -43,15 +43,15 @@ public class EjercicioPoo {
         List<Ticket> listaTickets = new ArrayList<Ticket>();
 
         //creacion de ticket mediante parametros
-        Ticket ticket1 = new Ticket(1, 1, 2, 10000, new Date(), new Date());
-        Ticket ticket2 = new Ticket(1, 1, 1, 10000, new Date(), new Date());
+        Ticket ticket1 = new Ticket(1, 1, 2, 6500, new Date(), new Date());
+        Ticket ticket2 = new Ticket(1, 1, 1, 6500, new Date(), new Date());
 
         //creacion de ticket mediante construtor vacio y aplico encapsulamiento
         Ticket ticket3 = new Ticket();
         ticket3.setNumero(3);
         ticket3.setFila(3);
         ticket3.setAsiento(1);
-        ticket3.setPrecio(10000);
+        ticket3.setPrecio(8000);
         ticket3.setFechaCompra(new Date());
         ticket3.setFechaValidez(new Date());
 
@@ -59,5 +59,14 @@ public class EjercicioPoo {
         listaTickets.add(ticket1);
         listaTickets.add(ticket2);
         listaTickets.add(ticket3);
+
+        //PUNTO 3: Suma de precios de todos los tickets:
+
+        double suma = 0;
+        for(Ticket tick: listaTickets){
+            suma += tick.getPrecio();
+        }
+
+        System.out.println("La suma de precio de todos los tickets es: " + suma);
     }
 }
