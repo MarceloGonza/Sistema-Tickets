@@ -11,6 +11,7 @@ public class Ticket {
     private Date fechaCompra;
     private Date fechaValidez;
 
+    //encapsulamiento(POO): Permite que los datos no puedan ser alterados sin pasar por setter y getter
     public Ticket(){
 
     }
