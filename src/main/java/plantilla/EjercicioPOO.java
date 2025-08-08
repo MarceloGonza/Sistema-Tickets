@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
+
 /**
  *
  * @author Marcelo
@@ -92,6 +93,18 @@ public class EjercicioPoo {
         if(condicion == false){
             System.out.println("Ticket no encontrado en la fila: " + fila);
         }
+
+    //prueba de cliente
+
+    Cliente cli = new Cliente();
+    cli.setId(1);
+    cli.setNombre("Pedro");
+    cli.setApellido("Garcia");
+    cli.setDni("12312332");
+    cli.getListsTickets().add(ticket1);
+
+    Ticket ticket4 = new Ticket(12, 4, 6, 4500, new Date(2024-12-12), new Date());
+    cli.getListsTickets().add(ticket4);
     }
 }
 
